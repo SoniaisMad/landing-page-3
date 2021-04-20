@@ -9,56 +9,31 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main className="grid grid-cols-3 w-1/2 gap-4 mb-20">
+        <img src="/p1.jpg" alt="photo 1" />
+        <img src="/p2.jpg" alt="photo 2" />
+        <img src="/p3.jpg" alt="photo 3" />
+        <img src="/p4.jpg" alt="photo 4" />
+        <img src="/p5.jpg" alt="photo 5" />
+        <div className="mt-5">
+          <h1 className={styles.title}>Jane Doe</h1>
+          <h2 className="text-center mt-5 mb-5 " >Professional Photographer</h2>
+          <div className="flex flex-row justify-between w-3/4 m-auto">
+            <a href="#">
+              <img className="h-8 mt-5" src="/twitter.png" alt="twitter icon" />
+            </a>
+            <a href="#">
+              <img className="h-8 mt-5" src="/instagram.png" alt="instagram icon" />
+            </a>
+            <a href="#">
+              <img className="h-8 mt-5" src="/mail.png" alt="mail icon" />
+            </a>
+        </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+          Made with love, Next.js and Tailwind  
       </footer>
     </div>
   )
